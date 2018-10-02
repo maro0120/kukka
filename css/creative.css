@@ -186,7 +186,7 @@ img::-moz-selection {
 /* header */
 header {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-  padding-top: 0px;
+  padding-top: 0px !important;
 }
 
 header.masthead {
@@ -230,10 +230,10 @@ header.masthead p {
     font-size: 4rem;
   }
   :root {
-    font-size: calc(1vw + 1vh + .8vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
   }
   body {
-    font: 1rem/1.6;
+    font: 1rem/1.4;
   }
   .logo {
     width: 60%;
