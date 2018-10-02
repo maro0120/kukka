@@ -123,31 +123,5 @@
 
 sr.reveal('.animate', { easing: 'ease', duration: 2000, distance: '400px', opacity: 1, scale: 1 ,reset: 'true'});
 
-            
-
-  // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
-  });
-
-$('.test-popup-link').magnificPopup({ 
-  type: 'image',
-  gallery: {  //ギャラリーオプション
-    enabled:true
-  }
-
-});
-
 
 })(jQuery); // End of use strict
