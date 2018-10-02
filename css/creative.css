@@ -1,0 +1,304 @@
+/* font */
+@font-face {
+  font-family: Noto Sans SCEL;
+  src: url(../fonts/NotoSans-SemiCondensedLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NotoSansCJKjp;
+  src: url(../fonts/NotoSansCJKjp-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Noto Sans SC;
+  src: url(../fonts/NotoSans-SemiCondensed.ttf) format("truetype");
+}
+
+.font-weight-SC{
+  font-family: "Noto Sans SC"
+}
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+_:-ms-lang(x)::-ms-backdrop, .selector {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Noto Sans SCEL;
+}
+
+
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* section */
+section {
+  padding: 4rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+/* mainNav */
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  /* font-family: 'Open Sans', 'Helvetica Neue', NotoSansCJKjp, Arial, sans-serif; */
+  /* font-family:"Noto Sans SCEL", NotoSansCJKjp, Arial, sans-serif; */
+  /* font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Noto Sans SCEL", "游ゴシック", YuGothic,  "メイリオ", Meiryo, sans-serif; */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  /* font-weight: 700; */
+  color: #82c1b1;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Noto Sans SCEL;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #82c1b1;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  /* font-weight: 500; */
+  text-transform: uppercase;
+  color: #212529;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #82c1b1;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #82c1b1 !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #82c1b1;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #82c1b1;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #82c1b1;
+  }
+}
+
+/* header */
+header {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+header.masthead {
+  padding-top: 5rem;
+  height: 100vh;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/001.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.masthead h1 {
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Noto Sans SCEL;
+}
+
+header.masthead p {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Noto Sans SCEL;
+}
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+
+  header.masthead p {
+    font-size: 3rem;
+  }
+  .logo {
+    width: 40%;
+  }
+  .logo_head {
+    width: 80%;
+  }
+
+@media screen and (max-width: 768px) {
+  header.masthead p {
+    font-size: 2rem;
+  }
+  header.maszthead h1 {
+    font-size: 4rem;
+  }
+  :root {
+    font-size: calc(1vw + 1vh + .5vmin);
+  }
+  body {
+    font: 1rem/1.6;
+  }
+  .logo {
+    width: 60%;
+  }
+  .logo_head {
+    width: 40%;
+  }
+}
+
+
+/* service-box */
+.service-box {
+  max-width: 400px;
+}
+
+.text-primary {
+  color: #82c1b1 !important;
+}
+
+/* btn */
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  color: #82c1b1 !important;
+  border-color: #82c1b1 !important;
+  box-shadow: none
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #82c1b1 !important;
+  border-color: #82c1b1 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #82B1FF !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 193, 177, 0.5) !important;
+}
