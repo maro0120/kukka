@@ -233,7 +233,7 @@ header.masthead p {
     font-size: calc(1vw + 1vh + .5vmin);
   }
   body {
-    font: 1rem/1.4;
+    font: 1rem;
   }
   .logo {
     width: 60%;
