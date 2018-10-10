@@ -58,7 +58,7 @@ $(function(){
          var dispImg = '';
          if(imgsrc) {
          var imgsrc = String(imgsrc).split('_m').join('');
-             var dispImg = '<img ' + imgsrc + ' class="img-fluid" alt="">';
+             var dispImg = '<img ' + imgsrc + ' class="img-max" alt="">';
          }else{
          var dispImg = '<img src="img/logo.png" class="img-fluid" alt="">';
          }
