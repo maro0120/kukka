@@ -453,3 +453,8 @@ a.normal_color:active{
   height: 5em;
 }
 
+/* img */
+.img-max {
+  width: 100%;
+  height: auto;
+}
